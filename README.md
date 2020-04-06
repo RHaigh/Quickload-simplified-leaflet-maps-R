@@ -19,3 +19,5 @@ mathematically simplify the boundaries and compress the base map, similar to zip
 
 Analysts can then simply save the simplified basemap as an .rds object and deploy this to their chosen staging environment. 
 This will dramatically decrease map loading times for users. 
+
+Sample data for demonstration purposes is provided via a csv file based on daily covid-19 cases across Scottish healthboards. Boundaries are collected from stats.gov. 
