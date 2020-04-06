@@ -18,4 +18,4 @@ live environment, this can lead to significant loading times. This code will dem
 mathematically simplify the boundaries and compress the base map, similar to zipping a folder. 
 
 Analysts can then simply save the simplified basemap as an .rds object and deploy this to their chosen staging environment. 
-This wil ldramatically decrease loading times for users. 
+This will dramatically decrease map loading times for users. 
