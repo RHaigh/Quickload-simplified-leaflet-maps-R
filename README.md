@@ -9,7 +9,7 @@ Written - R Desktop 3.5.2
 
 Environment: RStudio v1.2.1335
 
-Packages: rmapshaper v0.4.3, tidyverse v1.2.1, leaflet v2.0.2, rgadl v1.4-6, sf v0.8-1, Rcpp v1.0.3, data.table v1.12.8
+Packages: rmapshaper v0.4.3, tidyverse v1.2.1, leaflet v2.0.2, rgdal v1.4-6, sf v0.8-1, Rcpp v1.0.3, data.table v1.12.8
 
 This is intended to be a guide for analysts and statisticians with a mid-level knowledge of R for geospatial imaging. 
 
