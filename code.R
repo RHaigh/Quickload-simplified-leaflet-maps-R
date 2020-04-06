@@ -43,13 +43,7 @@ map <- merge(boundaries_simplified, scot_cases, by.x = "HBName",
              by.y = "Area", all.x = FALSE, duplicateGeoms = TRUE)
 
 # We can automate calculation of bins with rbin package functions or manually input them
-bins <- rbin_quantiles(scot_cases, Area, TotalCases, 6)
-bins_breaks <- unlist(regmatches(bins$bins$cut_point, gregexpr("[[:digit:]]+\\.*[[:digit:]]*", 
-                                                               bins$bins$cut_point)))
-bins_breaks <- round(as.numeric(bins_breaks), 0)
-bins_breaks <- append(bins_breaks, Inf)
-bins_breaks <- append(bins_breaks, 0, 0)
-bins_breaks <- unique(bins_breaks)
+bins_breaks <- c(0, 50, 100, 150, 200, 300, 400, Inf)
 
 # Choose our palette from the existing list of CSS palettes
 pal <- colorBin("YlOrRd", domain = table, bins = bins_breaks)
