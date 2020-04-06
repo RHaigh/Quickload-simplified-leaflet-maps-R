@@ -1,4 +1,4 @@
-# quickload_simplified_maps
+# Quickload Simplified Maps
 Code for GIS analysts demonstrating how to use rmapshaper to simplify polygons for faster loading leaflet maps in R.
 
 Author: Richard Haigh
