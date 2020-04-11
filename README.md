@@ -1,6 +1,8 @@
 # Quickload Simplified Maps
 Code for GIS analysts demonstrating how to use rmapshaper to simplify polygons for faster loading leaflet maps in R.
 
+If you wish to learn more about rendering boundary polygons over basemaps then please read the custom-geog-maps-R repository located on this account. 
+
 Author: Richard Haigh
 
 Date of Intial Upload: 06/04/2020
