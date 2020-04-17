@@ -10,7 +10,7 @@ boundaries <- readOGR(dsn="./SG_NHS_HealthBoards_2019", layer="SG_NHS_HealthBoar
 # If you are new to shapefiles in R, the dsn is the location of your shapefile folder and the layer is the file ending in .shp
 
 # Simplify the geometric boundaries using ms_simplify from the rmapshaper package
-boundaries_simplified <- dz_boundaries %>%
+boundaries_simplified <- boundaries %>%
   rmapshaper::ms_simplify(keep = 0.05)
 
 # Convert eastings and northings to lat and long
