@@ -17,7 +17,11 @@ This is intended to be a guide for analysts and statisticians with a mid-level k
 
 Complex polygon boundaries and their supporting shapefiles are extremely detailed and large files. When deploying these to a 
 live environment, this can lead to significant loading times. This code will demonstrate how to use the rmapshaper package to 
-mathematically simplify the boundaries and compress the base map, similar to zipping a folder. 
+mathematically simplify the boundaries and compress the base map, similar to zipping a folder. Simply put, the package removes
+the thousands of tiny details within each polygon but keeps the general shape. 
+
+Note that this approach is not suitable if you require complex, street-level analysis for population weighting techniques. This 
+tool should only be useed when your maps are simply for high-level, visual analysis. 
 
 Analysts can then simply save the simplified basemap as an .rds object and deploy this to their chosen staging environment. 
 This will dramatically decrease map loading times for users. 
