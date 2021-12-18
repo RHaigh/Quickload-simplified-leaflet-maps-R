@@ -12,9 +12,11 @@ boundaries <- readOGR(dsn="./SG_NHS_HealthBoards_2019", layer="SG_NHS_HealthBoar
 # Simplify the geometric boundaries using ms_simplify from the rmapshaper package
 boundaries_simplified <- boundaries %>%
   rmapshaper::ms_simplify(keep = 0.05)
+# The 'keep' argument we are passing states what percentage of detail of each polygon to keep. 
+# Note that this will mean minute details are lost. If your analysis requires detailed, street-level analysis, this approach is not recommended. 
 
 # Convert eastings and northings to lat and long
-# This is necessary as leaflet only understands lat and long and otherwise your map will end up in the middle of the Atlantic
+# This is necessary as leaflet only understands lat and long and otherwise your map will end up in the middle of the Atlantic...
 wgs84 = '+proj=longlat +datum=WGS84'
 boundaries_simplified <- spTransform(boundaries_simplified, CRS(wgs84))
 
